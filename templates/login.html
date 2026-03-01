@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Online Banking Login</h1>
+<p style="margin-bottom:15px;">Access your VulnBank accounts securely.</p>
+<form method="POST" style="max-width:400px;">
+    <label>Customer ID:</label>
+    <input type="text" name="username" placeholder="Enter your customer ID">
+    <label>PIN / Password:</label>
+    <input type="password" name="password" placeholder="Enter your password">
+    <button type="submit">Sign In</button>
+</form>
+{% endblock %}

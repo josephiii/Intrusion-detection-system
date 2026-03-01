@@ -1,0 +1,77 @@
+2026-03-01 17:47:16,320 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-01 17:47:16,320 | [33mPress CTRL+C to quit[0m
+2026-03-01 17:47:16,321 |  * Restarting with stat
+2026-03-01 17:47:16,651 |  * Debugger is active!
+2026-03-01 17:47:16,656 |  * Debugger PIN: 103-153-652
+2026-03-01 17:47:44,700 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:47:44,718 | 127.0.0.1 - - [01/Mar/2026 17:47:44] "GET / HTTP/1.1" 200 -
+2026-03-01 17:47:45,055 | method=GET path=/favicon.ico ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:47:45,056 | 127.0.0.1 - - [01/Mar/2026 17:47:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-01 17:48:16,745 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:16,748 | 127.0.0.1 - - [01/Mar/2026 17:48:16] "GET / HTTP/1.1" 200 -
+2026-03-01 17:48:18,001 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:18,008 | 127.0.0.1 - - [01/Mar/2026 17:48:18] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:48:24,939 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:24,946 | 127.0.0.1 - - [01/Mar/2026 17:48:24] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:48:34,572 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:34,576 | 127.0.0.1 - - [01/Mar/2026 17:48:34] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:48:36,040 | method=GET path=/diagnostics ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:36,047 | 127.0.0.1 - - [01/Mar/2026 17:48:36] "GET /diagnostics HTTP/1.1" 200 -
+2026-03-01 17:48:43,622 | method=GET path=/login ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:43,626 | 127.0.0.1 - - [01/Mar/2026 17:48:43] "GET /login HTTP/1.1" 200 -
+2026-03-01 17:48:45,851 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:45,853 | 127.0.0.1 - - [01/Mar/2026 17:48:45] "GET / HTTP/1.1" 200 -
+2026-03-01 17:48:47,237 | method=GET path=/login ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:47,239 | 127.0.0.1 - - [01/Mar/2026 17:48:47] "GET /login HTTP/1.1" 200 -
+2026-03-01 17:48:52,248 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:52,250 | 127.0.0.1 - - [01/Mar/2026 17:48:52] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:48:53,198 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:53,200 | 127.0.0.1 - - [01/Mar/2026 17:48:53] "GET / HTTP/1.1" 200 -
+2026-03-01 17:48:54,377 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:54,381 | 127.0.0.1 - - [01/Mar/2026 17:48:54] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:48:55,265 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:48:55,266 | 127.0.0.1 - - [01/Mar/2026 17:48:55] "GET / HTTP/1.1" 200 -
+2026-03-01 17:49:10,860 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:49:10,861 | 127.0.0.1 - - [01/Mar/2026 17:49:10] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:50:42,167 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-01 17:50:42,175 | [33mPress CTRL+C to quit[0m
+2026-03-01 17:50:42,177 |  * Restarting with stat
+2026-03-01 17:50:42,506 |  * Debugger is active!
+2026-03-01 17:50:42,511 |  * Debugger PIN: 103-153-652
+2026-03-01 17:50:44,604 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:44,613 | 127.0.0.1 - - [01/Mar/2026 17:50:44] "GET / HTTP/1.1" 200 -
+2026-03-01 17:50:47,225 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:47,234 | 127.0.0.1 - - [01/Mar/2026 17:50:47] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:50:48,536 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:48,554 | 127.0.0.1 - - [01/Mar/2026 17:50:48] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:50:49,330 | method=GET path=/diagnostics ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:49,349 | 127.0.0.1 - - [01/Mar/2026 17:50:49] "GET /diagnostics HTTP/1.1" 200 -
+2026-03-01 17:50:50,038 | method=GET path=/login ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:50,055 | 127.0.0.1 - - [01/Mar/2026 17:50:50] "GET /login HTTP/1.1" 200 -
+2026-03-01 17:50:51,754 | method=GET path=/diagnostics ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:51,755 | 127.0.0.1 - - [01/Mar/2026 17:50:51] "GET /diagnostics HTTP/1.1" 200 -
+2026-03-01 17:50:56,464 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:56,466 | 127.0.0.1 - - [01/Mar/2026 17:50:56] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:50:58,513 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:50:58,515 | 127.0.0.1 - - [01/Mar/2026 17:50:58] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:51:01,446 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:01,449 | 127.0.0.1 - - [01/Mar/2026 17:51:01] "GET / HTTP/1.1" 200 -
+2026-03-01 17:51:30,467 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:30,469 | 127.0.0.1 - - [01/Mar/2026 17:51:30] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:51:32,791 | method=GET path=/support ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:32,796 | 127.0.0.1 - - [01/Mar/2026 17:51:32] "GET /support HTTP/1.1" 200 -
+2026-03-01 17:51:34,341 | method=GET path=/accounts ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:34,343 | 127.0.0.1 - - [01/Mar/2026 17:51:34] "GET /accounts HTTP/1.1" 200 -
+2026-03-01 17:51:38,393 | method=GET path=/ ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:38,394 | 127.0.0.1 - - [01/Mar/2026 17:51:38] "GET / HTTP/1.1" 200 -
+2026-03-01 17:51:41,105 | method=GET path=/login ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:41,106 | 127.0.0.1 - - [01/Mar/2026 17:51:41] "GET /login HTTP/1.1" 200 -
+2026-03-01 17:51:43,758 | method=GET path=/login ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:51:43,760 | 127.0.0.1 - - [01/Mar/2026 17:51:43] "GET /login HTTP/1.1" 200 -
+2026-03-01 17:52:00,989 | method=POST path=/login ip=127.0.0.1 args={} form={'username': 'admin', 'password': 'admin123'} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:52:00,992 | Executing query: SELECT * FROM users WHERE username = 'admin' AND password = 'admin123'
+2026-03-01 17:52:00,995 | 127.0.0.1 - - [01/Mar/2026 17:52:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-01 17:52:01,002 | method=GET path=/profile ip=127.0.0.1 args={} form={} user_agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+2026-03-01 17:52:01,011 | 127.0.0.1 - - [01/Mar/2026 17:52:01] "GET /profile HTTP/1.1" 200 -

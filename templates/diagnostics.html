@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Network Diagnostics</h1>
+<p>Internal tool for verifying network connectivity to banking partners.</p>
+<form method="POST" style="max-width:500px;">
+    <label>Target Host:</label>
+    <input type="text" name="target" placeholder="Enter IP address or hostname" value="{{ target }}">
+    <button type="submit">Run Diagnostic</button>
+</form>
+{% if output %}
+<pre>{{ output }}</pre>
+{% endif %}
+{% endblock %}

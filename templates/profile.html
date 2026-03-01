@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome, {{ session['username'] }}</h1>
+<table style="max-width:400px; margin-bottom:20px;">
+    <tr><th>Field</th><th>Value</th></tr>
+    <tr><td>Customer ID</td><td>{{ session['username'] }}</td></tr>
+    <tr><td>Role</td><td>{{ session.get('role', 'unknown') }}</td></tr>
+</table>
+<h2>Account Overview</h2>
+{% for a in accounts %}
+<div class="account-card">
+    <div class="acct-label">{{ a['account_type'] }} Account</div>
+    <div class="acct-number">{{ a['account_number'] }}</div>
+    <div class="acct-label" style="margin-top:10px;">Available Balance</div>
+    <div class="acct-balance">${{ "{:,.2f}".format(a['balance']) }}</div>
+    <div class="acct-label" style="margin-top:5px;">Holder: {{ a['holder'] }}</div>
+</div>
+{% endfor %}
+{% endblock %}

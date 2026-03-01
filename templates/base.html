@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulnBank — {{ title }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; background: #f4f1eb; color: #1a1a2e; }
+        .container { max-width: 850px; margin: 0 auto; padding: 30px; }
+
+        /* Header / Nav */
+        nav {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 30px;
+            border-bottom: 4px solid #c9a84c;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-brand {
+            color: #c9a84c;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+        .nav-links a {
+            color: #d4d4d4;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.95em;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #c9a84c; }
+
+        /* Typography */
+        h1 { color: #1a1a2e; margin-bottom: 10px; font-size: 1.8em; border-bottom: 2px solid #c9a84c; padding-bottom: 10px; }
+        h2 { color: #16213e; margin: 20px 0 10px 0; font-size: 1.3em; }
+
+        /* Warning banner */
+        .warning {
+            background: #fff3cd; border: 1px solid #ffc107; color: #856404;
+            padding: 12px 20px; margin-bottom: 25px; border-radius: 4px;
+            font-family: Arial, sans-serif; font-size: 0.9em;
+        }
+
+        /* Forms */
+        label { display: block; margin-top: 12px; font-weight: bold; color: #333; font-size: 0.9em; }
+        input, textarea {
+            background: #fff; border: 1px solid #bbb; color: #333;
+            padding: 10px 14px; margin: 5px 0 10px 0; width: 100%;
+            font-family: Arial, sans-serif; font-size: 0.95em; border-radius: 3px;
+        }
+        input:focus, textarea:focus { border-color: #0f3460; outline: none; box-shadow: 0 0 4px rgba(15,52,96,0.3); }
+        button {
+            background: linear-gradient(135deg, #1a1a2e, #0f3460);
+            color: #c9a84c; border: 2px solid #c9a84c;
+            padding: 12px 30px; cursor: pointer; font-weight: bold;
+            font-family: Georgia, serif; margin-top: 10px; border-radius: 3px;
+            font-size: 1em; letter-spacing: 1px; transition: all 0.2s;
+        }
+        button:hover { background: #c9a84c; color: #1a1a2e; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th { background: #1a1a2e; color: #c9a84c; padding: 12px; text-align: left; font-size: 0.9em; letter-spacing: 0.5px; }
+        td { border-bottom: 1px solid #ddd; padding: 12px; font-family: Arial, sans-serif; font-size: 0.95em; }
+        tr:hover td { background: #eee8d5; }
+
+        /* Flash messages */
+        .flash {
+            background: #d4edda; border: 1px solid #28a745; color: #155724;
+            padding: 12px 20px; margin: 10px 0; border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Support tickets */
+        .ticket-box {
+            background: #fff; border: 1px solid #ddd; padding: 18px;
+            margin: 12px 0; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .ticket-box .author { color: #0f3460; font-weight: bold; }
+        .ticket-box .date { color: #999; font-size: 0.8em; font-family: Arial, sans-serif; }
+
+        /* Code hints */
+        code {
+            background: #2d2d2d; color: #e6db74; padding: 2px 8px;
+            border-radius: 3px; font-size: 0.85em;
+        }
+
+        /* Pre (command output) */
+        pre {
+            background: #1a1a2e; color: #a8dadc; padding: 18px;
+            border: 1px solid #0f3460; border-radius: 4px;
+            overflow-x: auto; margin: 12px 0; white-space: pre-wrap;
+            font-size: 0.9em;
+        }
+
+        /* Balance display */
+        .balance { color: #28a745; font-weight: bold; font-family: 'Courier New', monospace; }
+        .account-card {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff; padding: 20px; border-radius: 8px; margin: 15px 0;
+            border: 1px solid #c9a84c;
+        }
+        .account-card .acct-label { color: #c9a84c; font-size: 0.8em; letter-spacing: 1px; text-transform: uppercase; }
+        .account-card .acct-number { font-family: 'Courier New', monospace; font-size: 1.2em; margin: 5px 0; }
+        .account-card .acct-balance { font-size: 1.6em; color: #c9a84c; font-family: 'Courier New', monospace; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-brand">🏦 VULNBANK</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/accounts">Accounts</a>
+            <a href="/support">Support</a>
+            <a href="/diagnostics">Diagnostics</a>
+            {% if session.get('username') %}
+                <a href="/profile">{{ session['username'] }}</a>
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/login">Online Banking</a>
+            {% endif %}
+        </div>
+    </nav>
+    <div class="container">
+        <div class="warning">⚠️ INTENTIONALLY VULNERABLE APPLICATION — FOR SECURITY TESTING ONLY. NOT A REAL BANK.</div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+            <div class="flash">{{ msg }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Account Lookup</h1>
+<p>Search by account holder name or account number.</p>
+<form method="POST" style="max-width:500px;">
+    <input type="text" name="query" placeholder="Search accounts..." value="{{ query_text }}">
+    <button type="submit">Search</button>
+</form>
+
+{% if error %}
+    <p style="color:#dc3545;">System error: {{ error }}</p>
+{% elif results %}
+    <table>
+        <tr><th>ID</th><th>Holder</th><th>Account #</th><th>Type</th><th>Balance</th></tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r['id'] }}</td>
+            <td>{{ r['holder'] }}</td>
+            <td>{{ r['account_number'] }}</td>
+            <td>{{ r['account_type'] }}</td>
+            <td class="balance">${{ "{:,.2f}".format(r['balance']) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% elif query_text %}
+    <p>No accounts found matching your search.</p>
+{% endif %}
+{% endblock %}

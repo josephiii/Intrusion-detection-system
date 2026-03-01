@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to VulnBank</h1>
+<p style="font-size:1.1em; line-height:1.6; margin-bottom:20px;">
+    Trusted since 1987. Your finances, our vulnerability.
+</p>
+<h2>Online Banking Services</h2>
+<table>
+    <tr><th>Service</th><th>Description</th><th>Vulnerability</th></tr>
+    <tr>
+        <td><a href="/login" style="color:#0f3460;">Online Banking Login</a></td>
+        <td>Access your accounts</td>
+        <td><code>SQL Injection & Brute Force</code></td>
+    </tr>
+    <tr>
+        <td><a href="/accounts" style="color:#0f3460;">Account Lookup</a></td>
+        <td>Search customer accounts</td>
+        <td><code>SQL Injection</code></td>
+    </tr>
+    <tr>
+        <td><a href="/support" style="color:#0f3460;">Customer Support</a></td>
+        <td>Submit a support ticket</td>
+        <td><code>Stored XSS</code></td>
+    </tr>
+    <tr>
+        <td><a href="/diagnostics" style="color:#0f3460;">Network Diagnostics</a></td>
+        <td>Internal network tools</td>
+        <td><code>Command Injection</code></td>
+    </tr>
+</table>
+{% endblock %}
