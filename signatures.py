@@ -1,0 +1,101 @@
+# --- SQL Injection ---
+SQL_INJECTION_PATTERNS = [
+    r"(\%27)|(\')|(\-\-)|(\%23)|(#)",
+    r"((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))",
+    r"\w*((\%27)|(\'))\s*((\%6F)|o|(\%4F))((\%72)|r|(\%52))",
+    r"((\%27)|(\'))union",
+    r"union.*select",
+    r"select.*from",
+    r"insert\s+into",
+    r"drop\s+table",
+    r"delete\s+from",
+    r"update\s+.*set",
+    r"or\s+1\s*=\s*1",
+    r"or\s+\'1\'\s*=\s*\'1\'",
+    r"or\s+true",
+    r"'\s+or\s+'",
+    r";\s*(drop|delete|insert|update|create|alter)",
+    r"sleep\s*\(",
+    r"benchmark\s*\(",
+    r"waitfor\s+delay",
+    r"1\s*=\s*1",
+    r"'\s*--",
+]
+
+# --- XSS (Cross-Site Scripting) ---
+XSS_PATTERNS = [
+    r"<script[^>]*>",
+    r"</script>",
+    r"javascript\s*:",
+    r"on\w+\s*=",
+    r"<iframe",
+    r"<object",
+    r"<embed",
+    r"<img[^>]+onerror",
+    r"<svg[^>]+onload",
+    r"document\.cookie",
+    r"document\.location",
+    r"alert\s*\(",
+    r"prompt\s*\(",
+    r"confirm\s*\(",
+    r"eval\s*\(",
+    r"expression\s*\(",
+    r"String\.fromCharCode",
+    r"<body[^>]+onload",
+]
+
+# --- Command Injection ---
+COMMAND_INJECTION_PATTERNS = [
+    r";\s*\w",
+    r"\|\s*\w",
+    r"\|\|\s*\w",
+    r"&&\s*\w",
+    r"`[^`]+`",
+    r"\$\([^)]+\)",
+    r"\b(cat|ls|whoami|id|pwd|uname)\b",
+    r"\b(wget|curl|nc|netcat|ncat)\b",
+    r"\b(bash|sh|zsh|dash|ksh)\b",
+    r"/etc/(passwd|shadow|hosts)",
+    r"\.\./",
+    r"\brm\s+(-rf?|.*\*)",
+    r"\bchmod\b",
+    r"\bchown\b",
+    r"\bnc\s+-[elp]",
+    r"/bin/(bash|sh)",
+]
+
+# --- Directory Traversal ---
+TRAVERSAL_PATTERNS = [
+    r"\.\./",
+    r"\.\.\\",
+    r"%2e%2e%2f",
+    r"%2e%2e/",
+    r"\.\.%2f",
+    r"/etc/passwd",
+    r"/etc/shadow",
+    r"/proc/self",
+    r"C:\\Windows",
+    r"C:\\boot\.ini",
+]
+
+# --- Suspicious User-Agents ---
+SUSPICIOUS_USER_AGENTS = [
+    r"nikto",
+    r"sqlmap",
+    r"nmap",
+    r"masscan",
+    r"dirbuster",
+    r"gobuster",
+    r"wfuzz",
+    r"hydra",
+    r"metasploit",
+    r"burp\s*suite",
+    r"zap",
+    r"skipfish",
+    r"w3af",
+    r"arachni",
+    r"nessus",
+    r"openvas",
+    r"acunetix",
+    r"havij",
+]
